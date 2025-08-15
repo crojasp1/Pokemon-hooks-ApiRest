@@ -8,8 +8,6 @@ const MultipleCustomHooks = () => {
   const {counter, increment, decrement} = useCounter(1);
   const {data, hasError, isLoading} = useFetch(`https://pokeapi.co/api/v2/pokemon/${ counter }`);
   
-      console.log(data);
-
   return (
     <>
       <h1>Información de Pokemon</h1>
@@ -22,10 +20,13 @@ const MultipleCustomHooks = () => {
       <h2>{data?.name}</h2>
       
 
-      <button className="btn btn-primary m-2 " onClick={() => decrement()} disabled= {(counter <= 1)} >Anterior</button>
+      <button className="btn btn-primary m-2 decrement-button " onClick={() => decrement()} disabled= {(counter <= 1)} >Anterior</button>
 
-      <button className="btn btn-primary m-2" onClick={() => increment() }>Siguiente</button>
+      <button className="btn btn-primary m-2 increment-button" onClick={() => increment() }>Siguiente</button>
 
+      <button className="  m-2 decrement-button-2 " onClick={() => decrement()} disabled= {(counter <= 1)} >x</button>
+
+      <button className="m-2 increment-button-2" onClick={() => increment() }>o</button>
     </>
     
   )

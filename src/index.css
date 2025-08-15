@@ -6,6 +6,46 @@ button{
   margin-right: 10px;
 }
 
+.decrement-button{
+  position: relative;
+  left: 438px;
+  top: 100px;
+  z-index: 1;
+}
+
+.increment-button{
+  position: relative;
+  left: 440px;
+  top: 100px;
+  z-index: 1;
+}
+
+.decrement-button-2{
+  position: absolute;
+  z-index: 1;
+  left: 305px;
+  top: 485px;
+  background: none;
+  border: none;
+}
+
+.increment-button-2{
+    position: absolute;
+  z-index: 1;
+  left: 355px;
+  top: 485px;
+  background: none;
+  border: none;
+}
+
+.poke-name{
+  color: white;
+  position: absolute;
+  top: 260px;
+  left: 470px;
+  z-index: 1;
+}
+
 .poke-card{
   display: flex;
   position: relative;

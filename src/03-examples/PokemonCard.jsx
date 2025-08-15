@@ -22,7 +22,7 @@ const PokemonCard = ({ id, name, sprites = []}) => {
 
   return (
     <section style={{ height: 200}}>
-      <h2 className="text-capitalize">#-{id} {name}</h2>
+      <h2 className="text-capitalize poke-name">#-{id} {name}</h2>
 
       <img src={pokedex} alt="pokedex" className="pokedex" />
 
